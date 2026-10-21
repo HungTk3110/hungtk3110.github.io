@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for ArrowShift: Logic Puzzle - Android Mobile Game">
+    <title>Privacy Policy - ArrowShift: Logic Puzzle</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --surface-color: #ffffff;
+            --surface-subtle: #f1f5f9;
+            --border-color: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --accent-primary: #4f46e5;
+            --accent-hover: #4338ca;
+            --accent-light: #eef2ff;
+            --accent-border: #c7d2fe;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 24px 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .badge-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--accent-light);
+            color: var(--accent-primary);
+            font-size: 0.825rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            border: 1px solid var(--accent-border);
+        }
+
+        .badge-platform {
+            background-color: #ecfdf5;
+            color: #059669;
+            border-color: #a7f3d0;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .meta-info span strong {
+            color: var(--text-primary);
+        }
+
+        /* Navigation / TOC */
+        nav.toc-box {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px 28px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        nav.toc-box h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 8px 16px;
+        }
+
+        .toc-list li a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-size: 0.925rem;
+            font-weight: 500;
+            display: inline-block;
+            padding: 4px 0;
+            transition: color 0.15s ease, transform 0.15s ease;
+        }
+
+        .toc-list li a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+            transform: translateX(2px);
+        }
+
+        /* Main Content & Sections */
+        main {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 40px 36px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        section {
+            margin-bottom: 36px;
+            scroll-margin-top: 24px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.015em;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--surface-subtle);
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 12px 0 16px 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .notice-card {
+            background-color: var(--surface-subtle);
+            border-left: 4px solid var(--accent-primary);
+            padding: 16px 20px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 16px 0;
+            font-size: 0.95rem;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 18px 20px;
+            margin-top: 14px;
+        }
+
+        .service-card h4 {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 32px;
+            padding: 28px 20px;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+        }
+
+        footer a:hover {
+            color: var(--accent-primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+            }
+
+            header {
+                padding: 24px 20px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            main {
+                padding: 24px 20px;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            nav.toc-box {
+                padding: 18px 20px;
+            }
+
+            .toc-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="badge-wrapper">
+                <span class="badge">ArrowShift: Logic Puzzle</span>
+                <span class="badge badge-platform">Android</span>
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">
+                This Privacy Policy explains how information is collected, used, and disclosed when you play <strong>ArrowShift: Logic Puzzle</strong> on Android devices.
+            </p>
+            <div class="meta-info">
+                <span><strong>Effective Date:</strong> October 21, 2026</span>
+                <span><strong>App Name:</strong> ArrowShift: Logic Puzzle</span>
+                <span><strong>Contact:</strong> <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a></span>
+            </div>
+        </header>
+
+        <!-- Table of Contents -->
+        <nav class="toc-box" aria-label="Table of Contents">
+            <h2>Table of Contents</h2>
+            <ul class="toc-list">
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#information-we-collect">2. Information We Collect</a></li>
+                <li><a href="#advertising">3. Advertising (Google AdMob)</a></li>
+                <li><a href="#analytics-and-diagnostics">4. Analytics &amp; Diagnostics</a></li>
+                <li><a href="#how-we-use-information">5. How We Use Information</a></li>
+                <li><a href="#third-party-services">6. Third-Party Services</a></li>
+                <li><a href="#data-retention-security">7. Data Retention &amp; Security</a></li>
+                <li><a href="#childrens-privacy">8. Children's Privacy</a></li>
+                <li><a href="#your-privacy-rights">9. Your Privacy Rights</a></li>
+                <li><a href="#international-transfers">10. International Transfers</a></li>
+                <li><a href="#changes-to-policy">11. Changes to This Policy</a></li>
+                <li><a href="#contact-us">12. Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Section 1 -->
+            <section id="introduction">
+                <h2>1. Introduction</h2>
+                <p>
+                    Welcome to <strong>ArrowShift: Logic Puzzle</strong> ("the Game", "the Application", "we", "our", or "us"). We are committed to protecting your privacy and providing transparency about how information relating to your use of the Game is handled.
+                </p>
+                <p>
+                    This Privacy Policy applies to the <strong>ArrowShift: Logic Puzzle</strong> mobile application distributed via the Google Play Store for Android. It describes the types of data that may be processed when you access and play the Game, why that data is processed, and your privacy choices under applicable data protection laws.
+                </p>
+                <p>
+                    By downloading, installing, or playing ArrowShift: Logic Puzzle, you acknowledge that you have read and understood the practices described in this Privacy Policy. If you have questions or concerns, you can contact us anytime at <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a>.
+                </p>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="information-we-collect">
+                <h2>2. Information We Collect</h2>
+                <p>
+                    We design ArrowShift: Logic Puzzle to provide an engaging logic puzzle experience without requiring unnecessary personal information. The Game does not require you to create an account, log in with social media, or supply your name or physical address.
+                </p>
+
+                <h3>A. Information Provided Directly by You</h3>
+                <p>
+                    You are not required to provide personal information to play the game. However, if you choose to contact us for customer support or feedback via email, we will receive:
+                </p>
+                <ul>
+                    <li>Your email address.</li>
+                    <li>The contents of your message and any technical details or screenshots you choose to share.</li>
+                </ul>
+                <p>
+                    This information is used solely to respond to your inquiries, troubleshoot technical issues, and improve the game.
+                </p>
+
+                <h3>B. Information Collected Automatically</h3>
+                <p>
+                    When you access the Game on an Android device, certain technical and diagnostic data may be collected automatically by integrated third-party Software Development Kits (SDKs) and operating system services. This may include:
+                </p>
+                <ul>
+                    <li><strong>Device Identifiers:</strong> Android Advertising ID (GAID), unique device identifiers, IP address, and network carrier information.</li>
+                    <li><strong>Device &amp; Hardware Specifications:</strong> Device model, manufacturer, screen resolution, operating system version, and system language.</li>
+                    <li><strong>Usage &amp; Interaction Data:</strong> Game launch events, gameplay duration, levels completed, feature interaction, and in-game ad engagement.</li>
+                    <li><strong>Diagnostic Data:</strong> Crash traces, ANR (Application Not Responding) reports, memory statistics, and performance metrics.</li>
+                    <li><strong>Coarse Location Data:</strong> Approximate, country- or city-level location derived from IP addresses (precise GPS location is <em>not</em> requested or collected).</li>
+                </ul>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="advertising">
+                <h2>3. Advertising (Google AdMob)</h2>
+                <p>
+                    To support the ongoing maintenance and free availability of ArrowShift: Logic Puzzle, the game integrates advertising provided by <strong>Google AdMob</strong>.
+                </p>
+                <p>
+                    Advertising partners may collect and process pseudonymous identifiers and interaction data to serve ads within the Game. Depending on your region, consent selections, and device configuration, ads may be personalized or non-personalized:
+                </p>
+                <ul>
+                    <li><strong>Personalized Advertising:</strong> Ads tailored to your interests based on previously collected data across various apps and websites, facilitated through the Google Advertising ID.</li>
+                    <li><strong>Non-Personalized Advertising:</strong> Ads based on contextual factors, such as current gameplay context, general app category, or coarse geographical area (e.g., country level), without profiling individual users across apps.</li>
+                </ul>
+                <p>
+                    In jurisdictions requiring user consent (such as the European Economic Area, the United Kingdom, and Switzerland under the GDPR/ePrivacy framework), a consent management dialog (such as Google User Messaging Platform) is presented to allow you to configure your advertising and cookie/identifier preferences.
+                </p>
+                <div class="notice-card">
+                    <p>
+                        To learn more about how Google processes information for advertising and how to manage your privacy settings, please visit:
+                        <br>
+                        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising &amp; Privacy Policy (https://policies.google.com/technologies/ads)</a>
+                    </p>
+                </div>
+                <p>
+                    You can reset or opt out of personalized advertising at any time through your Android device settings by navigating to:
+                    <br>
+                    <strong>Settings &gt; Google &gt; Ads &gt; Reset advertising ID</strong> or <strong>Delete advertising ID</strong>.
+                </p>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="analytics-and-diagnostics">
+                <h2>4. Analytics &amp; Diagnostics</h2>
+                <p>
+                    We may utilize analytics and crash reporting services (such as Google Play Console diagnostics, and if enabled, Firebase Analytics or Firebase Crashlytics) to monitor the health, stability, and performance of ArrowShift: Logic Puzzle.
+                </p>
+                <p>These services help us:</p>
+                <ul>
+                    <li>Identify and fix crashes, freezes, and unexpected bugs on specific device configurations.</li>
+                    <li>Evaluate level difficulty, completion rates, and puzzle mechanics to balance gameplay.</li>
+                    <li>Understand device compatibility and optimize battery and memory usage.</li>
+                </ul>
+                <p>
+                    All diagnostic information is processed in an aggregated or pseudonymized form that does not directly identify individual human users.
+                </p>
+            </section>
+
+            <!-- Section 5 -->
+            <section id="how-we-use-information">
+                <h2>5. How We Use Information</h2>
+                <p>Information processed in connection with ArrowShift: Logic Puzzle is used for the following legitimate operational and legal purposes:</p>
+                <ul>
+                    <li><strong>Game Delivery &amp; Maintenance:</strong> To provide core gameplay mechanics, track level progression locally on your device, and ensure smooth performance.</li>
+                    <li><strong>Quality Assurance &amp; Bug Fixing:</strong> To detect, diagnose, and resolve technical issues, application crashes, and software bugs.</li>
+                    <li><strong>Service Monetization:</strong> To display contextual or interest-based advertisements through AdMob, supporting the ongoing free distribution of the Game.</li>
+                    <li><strong>Customer Support:</strong> To communicate with you and address inquiries, bug reports, or feature suggestions submitted via email.</li>
+                    <li><strong>Security &amp; Fraud Prevention:</strong> To detect fraudulent ad clicks, prevent abuse, protect intellectual property, and ensure platform integrity.</li>
+                    <li><strong>Legal Compliance:</strong> To comply with applicable legal obligations, developer terms, and Google Play policies.</li>
+                </ul>
+            </section>
+
+            <!-- Section 6 -->
+            <section id="third-party-services">
+                <h2>6. Third-Party Services</h2>
+                <p>
+                    ArrowShift: Logic Puzzle relies on third-party service providers to power platform features, advertising, and diagnostics. These third parties have access to technical data only as necessary to perform specific tasks on our behalf and are obligated under their respective privacy policies and applicable regulations.
+                </p>
+
+                <div class="service-card">
+                    <h4>Google Play Services</h4>
+                    <p>Provides platform-level infrastructure, security verification, and Android integration.</p>
+                    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy &rarr;</a></p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Google AdMob</h4>
+                    <p>Delivers in-game banner, interstitial, or rewarded advertisements and tracks advertising metrics.</p>
+                    <p><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Ads Privacy &amp; Terms &rarr;</a></p>
+                </div>
+            </section>
+
+            <!-- Section 7 -->
+            <section id="data-retention-security">
+                <h2>7. Data Retention &amp; Security</h2>
+                <h3>Data Retention</h3>
+                <p>
+                    The developer does not operate external databases storing personal player profiles. Game progress and configuration preferences are saved locally on your device storage. If you uninstall the app or clear app data via your device settings, local game progress will be removed.
+                </p>
+                <p>
+                    Data collected by third-party SDKs (such as AdMob or Google Play Services) is retained according to their published retention schedules and data policies, typically ranging from a few weeks for diagnostic telemetry up to statutory limits for aggregated performance reporting. Customer support emails are retained only as long as necessary to resolve your request and maintain support records.
+                </p>
+
+                <h3>Data Security</h3>
+                <p>
+                    We take reasonable organizational and technical precautions to safeguard the information we handle. Network transmissions by third-party SDKs are protected using standard encryption protocols (HTTPS / Transport Layer Security - TLS). However, please note that no method of transmission over the internet or electronic storage is 100% secure, and absolute security cannot be guaranteed.
+                </p>
+            </section>
+
+            <!-- Section 8 -->
+            <section id="childrens-privacy">
+                <h2>8. Children's Privacy</h2>
+                <p>
+                    ArrowShift: Logic Puzzle is designed as a logic puzzle game for general audiences. The Game is not directed to children under the age of 13 (or under 16 in certain jurisdictions such as the European Union).
+                </p>
+                <p>
+                    We do not knowingly collect or solicit personal identifiable information from children under 13. If we become aware that personal information from a child under 13 has been collected inadvertently without verified parental consent, we will promptly take steps to delete such information from our records.
+                </p>
+                <p>
+                    If you are a parent or legal guardian and believe that your child has provided us with personal information, please contact us immediately at <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a> so we can take appropriate measures.
+                </p>
+            </section>
+
+            <!-- Section 9 -->
+            <section id="your-privacy-rights">
+                <h2>9. Your Privacy Rights</h2>
+                <p>
+                    Depending on your country or state of residence, you may have specific privacy rights under laws such as the General Data Protection Regulation (GDPR / UK GDPR) or the California Consumer Privacy Act / California Privacy Rights Act (CCPA / CPRA).
+                </p>
+                <p>These rights may include:</p>
+                <ul>
+                    <li><strong>Right to Access &amp; Know:</strong> You may request information on what categories of data are collected and processed.</li>
+                    <li><strong>Right to Deletion / Erasure:</strong> You can request the deletion of personal information held by us (subject to legal retention exceptions).</li>
+                    <li><strong>Right to Rectification:</strong> You may request correction of inaccurate personal data.</li>
+                    <li><strong>Right to Object &amp; Restrict Processing:</strong> You may object to or restrict certain data processing activities.</li>
+                    <li><strong>Right to Opt Out of Targeted Advertising:</strong> You may opt out of personalized ads at any time via Android settings (<strong>Settings &gt; Google &gt; Ads</strong>) or via the in-app consent dialog where applicable.</li>
+                </ul>
+                <p>
+                    To exercise any applicable rights or if you have questions regarding your personal information, please contact us at <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a>. We will review and respond to verifiable requests within the timeframe mandated by applicable law.
+                </p>
+            </section>
+
+            <!-- Section 10 -->
+            <section id="international-transfers">
+                <h2>10. International Data Transfers</h2>
+                <p>
+                    Third-party service providers utilized by the Game (including Google) operate infrastructure and servers located across the globe, including in the United States and other countries outside of your residence.
+                </p>
+                <p>
+                    When data is transferred across international borders, these service providers utilize legally approved data transfer mechanisms, such as Standard Contractual Clauses (SCCs) and adherence to recognized data privacy frameworks, ensuring an adequate level of data protection in compliance with international standards.
+                </p>
+            </section>
+
+            <!-- Section 11 -->
+            <section id="changes-to-policy">
+                <h2>11. Changes to This Privacy Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time to reflect modifications in game features, SDK updates, changes in applicable laws, or adjustments to our operational practices.
+                </p>
+                <p>
+                    Any updates will be published directly on this page with an updated "Effective Date" at the top and bottom of the policy. We encourage you to review this page periodically to stay informed about how we safeguard your privacy.
+                </p>
+            </section>
+
+            <!-- Section 12 -->
+            <section id="contact-us">
+                <h2>12. Contact Us</h2>
+                <p>
+                    If you have any questions, feedback, or requests regarding this Privacy Policy or the data handling practices of <strong>ArrowShift: Logic Puzzle</strong>, please reach out to:
+                </p>
+                <div class="notice-card">
+                    <p><strong>App:</strong> ArrowShift: Logic Puzzle</p>
+                    <p><strong>Platform:</strong> Android (Google Play)</p>
+                    <p><strong>Contact Email:</strong> <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>ArrowShift: Logic Puzzle</strong> &bull; Android Mobile Game</p>
+            <p>Contact: <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a></p>
+            <p>Effective Date: October 21, 2026 &bull; Published via GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
