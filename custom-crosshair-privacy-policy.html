@@ -4,31 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Privacy Policy for Custom Crosshair (com.obito.armpro) - Gaming Utility Android App by HungTk.">
-    <meta name="theme-color" content="#0a0e17">
     <title>Privacy Policy - Custom Crosshair</title>
     <style>
         :root {
-            --bg-base: #0a0e17;
-            --bg-surface: #111827;
-            --bg-surface-elevated: #162032;
-            --bg-surface-glass: rgba(17, 24, 39, 0.75);
-            --border-subtle: #1f293d;
-            --border-highlight: #2e3d5b;
-            --accent-cyan: #00f0ff;
-            --accent-cyan-glow: rgba(0, 240, 255, 0.18);
-            --accent-green: #10b981;
-            --accent-green-glow: rgba(16, 185, 129, 0.15);
-            --accent-amber: #f59e0b;
-            --accent-amber-glow: rgba(245, 158, 11, 0.15);
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
+            --bg-color: #f8fafc;
+            --surface-color: #ffffff;
+            --surface-subtle: #f1f5f9;
+            --border-color: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
             --text-muted: #64748b;
-            --code-bg: #1e293b;
+            --accent-primary: #4f46e5;
+            --accent-hover: #4338ca;
+            --accent-light: #eef2ff;
+            --accent-border: #c7d2fe;
             --radius-sm: 6px;
-            --radius-md: 12px;
-            --radius-lg: 18px;
-            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
         }
 
         * {
@@ -38,128 +34,95 @@
         }
 
         body {
-            font-family: var(--font-family);
-            background-color: var(--bg-base);
-            background-image: 
-                radial-gradient(circle at 15% 10%, rgba(0, 240, 255, 0.05) 0%, transparent 40%),
-                radial-gradient(circle at 85% 60%, rgba(16, 185, 129, 0.04) 0%, transparent 45%);
-            background-attachment: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
             color: var(--text-primary);
             line-height: 1.7;
-            padding: 32px 16px;
+            padding: 24px 16px;
             -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 860px;
             margin: 0 auto;
         }
 
-        /* Header Card */
+        /* Header */
         header {
-            background: linear-gradient(145deg, var(--bg-surface-elevated), var(--bg-surface));
-            border: 1px solid var(--border-subtle);
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 36px 32px;
-            margin-bottom: 32px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-            position: relative;
-            overflow: hidden;
+            padding: 40px 32px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
         }
 
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
-        }
-
-        .app-badge-row {
+        .badge-wrapper {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 10px;
             margin-bottom: 16px;
+            flex-wrap: wrap;
         }
 
         .badge {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 9999px;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            background-color: var(--accent-light);
+            color: var(--accent-primary);
+            font-size: 0.825rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            border: 1px solid var(--accent-border);
         }
 
-        .badge-cyan {
-            background-color: var(--accent-cyan-glow);
-            color: var(--accent-cyan);
-            border: 1px solid rgba(0, 240, 255, 0.3);
-        }
-
-        .badge-green {
-            background-color: var(--accent-green-glow);
-            color: var(--accent-green);
-            border: 1px solid rgba(16, 185, 129, 0.3);
+        .badge-platform {
+            background-color: #ecfdf5;
+            color: #059669;
+            border-color: #a7f3d0;
         }
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.25rem;
             font-weight: 800;
             color: var(--text-primary);
-            letter-spacing: -0.02em;
+            letter-spacing: -0.025em;
+            line-height: 1.25;
             margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .meta-info {
             display: flex;
-            align-items: center;
-            gap: 12px;
             flex-wrap: wrap;
-        }
-
-        h1 .crosshair-icon {
-            color: var(--accent-cyan);
-            font-size: 1.8rem;
-            line-height: 1;
-        }
-
-        .app-meta-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 14px;
-            margin-top: 22px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-subtle);
-        }
-
-        .meta-item {
-            font-size: 0.88rem;
-        }
-
-        .meta-label {
+            gap: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
             color: var(--text-muted);
-            text-transform: uppercase;
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            margin-bottom: 3px;
         }
 
-        .meta-value {
+        .meta-info span strong {
             color: var(--text-primary);
-            font-weight: 600;
         }
 
-        .mono {
-            font-family: var(--font-mono);
-            color: var(--accent-cyan);
-            background: var(--code-bg);
+        code, .mono {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background: var(--surface-subtle);
+            border: 1px solid var(--border-color);
             padding: 2px 6px;
             border-radius: var(--radius-sm);
-            font-size: 0.85em;
+            font-size: 0.875em;
+            color: var(--accent-primary);
+            font-weight: 600;
         }
 
         /* Highlights / Overview Cards */
@@ -167,79 +130,116 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 16px;
-            margin-bottom: 32px;
+            margin-bottom: 28px;
         }
 
         .highlight-card {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-subtle);
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 20px;
+            box-shadow: var(--shadow-sm);
             transition: transform 0.2s ease, border-color 0.2s ease;
         }
 
         .highlight-card:hover {
             transform: translateY(-2px);
-            border-color: var(--border-highlight);
+            border-color: var(--border-hover);
         }
 
         .highlight-title {
             font-size: 0.95rem;
             font-weight: 700;
+            color: var(--text-primary);
             margin-bottom: 8px;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        .highlight-title.cyan { color: var(--accent-cyan); }
-        .highlight-title.green { color: var(--accent-green); }
-        .highlight-title.amber { color: var(--accent-amber); }
-
         .highlight-desc {
-            font-size: 0.85rem;
+            font-size: 0.875rem;
             color: var(--text-secondary);
             line-height: 1.5;
         }
 
-        /* Content Sections */
-        .policy-card {
-            background-color: var(--bg-surface);
-            border: 1px solid var(--border-subtle);
+        /* Navigation / TOC */
+        nav.toc-box {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px 28px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        nav.toc-box h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 8px 16px;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .toc-list li a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-size: 0.925rem;
+            font-weight: 500;
+            display: inline-block;
+            padding: 4px 0;
+            transition: color 0.15s ease, transform 0.15s ease;
+        }
+
+        .toc-list li a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+            transform: translateX(2px);
+        }
+
+        /* Main Content & Sections */
+        main {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 32px;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 40px 36px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        section {
+            margin-bottom: 36px;
+            scroll-margin-top: 24px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
         }
 
         h2 {
-            font-size: 1.35rem;
+            font-size: 1.45rem;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 18px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        h2 .section-num {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
-            background: var(--bg-surface-elevated);
-            color: var(--accent-cyan);
-            border-radius: 50%;
-            font-size: 0.82rem;
-            font-weight: 800;
-            border: 1px solid var(--border-highlight);
+            letter-spacing: -0.015em;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--surface-subtle);
         }
 
         h3 {
-            font-size: 1.05rem;
+            font-size: 1.15rem;
             font-weight: 600;
             color: var(--text-primary);
             margin: 20px 0 10px 0;
@@ -247,61 +247,57 @@
 
         p {
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
         }
 
         ul, ol {
+            margin: 12px 0 16px 20px;
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            padding-left: 22px;
-            margin-bottom: 16px;
         }
 
         li {
             margin-bottom: 8px;
         }
 
-        li strong {
+        strong {
             color: var(--text-primary);
+            font-weight: 600;
         }
 
         a {
-            color: var(--accent-cyan);
+            color: var(--accent-primary);
             text-decoration: none;
-            transition: color 0.15s ease, text-decoration 0.15s ease;
+            font-weight: 500;
+            transition: color 0.15s ease;
         }
 
         a:hover {
-            color: #67e8f9;
+            color: var(--accent-hover);
             text-decoration: underline;
         }
 
-        /* Callout Box */
-        .callout {
-            background-color: var(--bg-surface-elevated);
-            border-left: 4px solid var(--accent-cyan);
-            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        .notice-card {
+            background-color: var(--surface-subtle);
+            border-left: 4px solid var(--accent-primary);
             padding: 16px 20px;
-            margin: 18px 0;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 16px 0;
+            font-size: 0.95rem;
         }
 
-        .callout-green {
-            border-left-color: var(--accent-green);
-        }
-
-        .callout-amber {
-            border-left-color: var(--accent-amber);
-        }
-
-        .callout p:last-child {
-            margin-bottom: 0;
+        .notice-card-green {
+            border-left-color: #10b981;
+            background-color: #f0fdf4;
         }
 
         /* Permission Disclosure Cards */
         .perm-box {
-            background: var(--bg-surface-elevated);
-            border: 1px solid var(--border-subtle);
+            background-color: var(--surface-subtle);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 20px;
             margin-bottom: 16px;
@@ -317,33 +313,33 @@
         }
 
         .perm-name {
-            font-family: var(--font-mono);
-            font-size: 0.92rem;
-            color: var(--accent-cyan);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.925rem;
+            color: var(--accent-primary);
             font-weight: 700;
         }
 
         .perm-tag {
-            font-size: 0.72rem;
+            font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
-            padding: 3px 8px;
-            border-radius: var(--radius-sm);
-            background: rgba(0, 240, 255, 0.1);
-            color: var(--accent-cyan);
-            border: 1px solid rgba(0, 240, 255, 0.25);
+            padding: 3px 10px;
+            border-radius: 9999px;
+            background-color: var(--accent-light);
+            color: var(--accent-primary);
+            border: 1px solid var(--accent-border);
         }
 
         .perm-desc {
-            font-size: 0.9rem;
+            font-size: 0.925rem;
             color: var(--text-secondary);
             margin-bottom: 10px;
         }
 
         .perm-guarantee {
-            font-size: 0.85rem;
+            font-size: 0.875rem;
             color: var(--text-muted);
-            border-top: 1px dashed var(--border-highlight);
+            border-top: 1px dashed var(--border-color);
             padding-top: 8px;
         }
 
@@ -352,7 +348,7 @@
             overflow-x: auto;
             margin: 16px 0 20px 0;
             border-radius: var(--radius-md);
-            border: 1px solid var(--border-subtle);
+            border: 1px solid var(--border-color);
         }
 
         table {
@@ -363,16 +359,16 @@
         }
 
         th {
-            background-color: var(--bg-surface-elevated);
+            background-color: var(--surface-subtle);
             color: var(--text-primary);
             font-weight: 700;
             padding: 12px 16px;
-            border-bottom: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-color);
         }
 
         td {
             padding: 12px 16px;
-            border-bottom: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-color);
             color: var(--text-secondary);
         }
 
@@ -381,7 +377,7 @@
         }
 
         tr:hover td {
-            background-color: rgba(255, 255, 255, 0.02);
+            background-color: #f8fafc;
         }
 
         /* Steps */
@@ -389,6 +385,7 @@
             list-style: none;
             counter-reset: step-counter;
             padding-left: 0;
+            margin-left: 0;
         }
 
         .steps-list li {
@@ -406,17 +403,17 @@
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            background: var(--bg-surface-elevated);
-            color: var(--accent-cyan);
+            background-color: var(--accent-light);
+            color: var(--accent-primary);
             font-weight: 700;
             font-size: 0.78rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid var(--border-highlight);
+            border: 1px solid var(--accent-border);
         }
 
-        /* Contact Details */
+        /* Contact Details & Buttons */
         .contact-box {
             display: flex;
             flex-direction: column;
@@ -429,9 +426,9 @@
             align-items: center;
             gap: 8px;
             padding: 10px 18px;
-            background: var(--bg-surface-elevated);
-            color: var(--accent-cyan);
-            border: 1px solid var(--border-highlight);
+            background-color: var(--surface-subtle);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             font-weight: 600;
             font-size: 0.9rem;
@@ -440,22 +437,35 @@
         }
 
         .btn-link:hover {
-            background: var(--border-highlight);
+            background-color: #e2e8f0;
             text-decoration: none;
-            color: #ffffff;
-            border-color: var(--accent-cyan);
+            border-color: var(--border-hover);
         }
 
+        /* Footer */
         footer {
+            margin-top: 32px;
+            padding: 28px 20px;
             text-align: center;
-            padding: 24px 0 12px 0;
+            border-top: 1px solid var(--border-color);
             color: var(--text-muted);
-            font-size: 0.85rem;
-            border-top: 1px solid var(--border-subtle);
-            margin-top: 20px;
+            font-size: 0.9rem;
         }
 
-        /* Responsive */
+        footer p {
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+        }
+
+        footer a:hover {
+            color: var(--accent-primary);
+        }
+
+        /* Responsive Design */
         @media (max-width: 640px) {
             body {
                 padding: 16px 12px;
@@ -466,16 +476,27 @@
             }
 
             h1 {
-                font-size: 1.65rem;
+                font-size: 1.75rem;
             }
 
-            .policy-card {
-                padding: 22px 18px;
+            .subtitle {
+                font-size: 1rem;
             }
 
-            .app-meta-grid {
+            main {
+                padding: 24px 20px;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            nav.toc-box {
+                padding: 18px 20px;
+            }
+
+            .toc-list {
                 grid-template-columns: 1fr;
-                gap: 12px;
             }
 
             .highlight-grid {
@@ -486,291 +507,329 @@
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <!-- Header -->
-    <header>
-        <div class="app-badge-row">
-            <span class="badge badge-cyan">Google Play Compliant</span>
-            <span class="badge badge-green">Android Utility</span>
-        </div>
-
-        <h1>
-            <span class="crosshair-icon">⌖</span>
-            Privacy Policy
-        </h1>
-        <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 0;">
-            This Privacy Policy governs the manner in which <strong>Custom Crosshair</strong> ("we", "our", or "the App"), developed by <strong>HungTk</strong>, handles user data, sensitive permissions, and third-party advertising / diagnostic integrations.
-        </p>
-
-        <div class="app-meta-grid">
-            <div class="meta-item">
-                <div class="meta-label">Application Name</div>
-                <div class="meta-value">Custom Crosshair</div>
+        <!-- Header -->
+        <header>
+            <div class="badge-wrapper">
+                <span class="badge">Custom Crosshair</span>
+                <span class="badge badge-platform">Android Utility</span>
             </div>
-            <div class="meta-item">
-                <div class="meta-label">Package Name</div>
-                <div class="meta-value"><span class="mono">com.obito.armpro</span></div>
-            </div>
-            <div class="meta-item">
-                <div class="meta-label">Developer</div>
-                <div class="meta-value">HungTk</div>
-            </div>
-            <div class="meta-item">
-                <div class="meta-label">Effective Date</div>
-                <div class="meta-value">October 27, 2026</div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Quick Highlights -->
-    <div class="highlight-grid">
-        <div class="highlight-card">
-            <div class="highlight-title green">
-                <span>🛡️</span> Zero Personal Tracking
-            </div>
-            <div class="highlight-desc">
-                We never collect, store, or sell your name, email, phone number, GPS coordinates, contacts, or personal identity.
-            </div>
-        </div>
-
-        <div class="highlight-card">
-            <div class="highlight-title cyan">
-                <span>🎯</span> HUD Overlay Purpose
-            </div>
-            <div class="highlight-desc">
-                The screen overlay permission is strictly used to draw a visual aiming crosshair on top of your shooter games.
-            </div>
-        </div>
-
-        <div class="highlight-card">
-            <div class="highlight-title amber">
-                <span>⚡</span> Offline App Filtering
-            </div>
-            <div class="highlight-desc">
-                Installed game queries for the "Favorite Games" launcher are performed strictly offline on your local device.
-            </div>
-        </div>
-    </div>
-
-    <!-- Section 1: Overview & Scope -->
-    <section class="policy-card">
-        <h2><span class="section-num">1</span> Overview & Commitment</h2>
-        <p>
-            <strong>Custom Crosshair</strong> (Package: <span class="mono">com.obito.armpro</span>) is a specialized gaming utility app designed to assist players by generating an adjustable, custom-designed aiming reticle (crosshair HUD overlay) on screen during gameplay for first-person shooter (FPS) and third-person shooter (TPS) games.
-        </p>
-        <p>
-            We respect your privacy and are committed to full transparency regarding our data practices. We operate in strict compliance with the <strong>Google Play Developer Program Policies</strong>, specifically including the <em>User Data Policy</em>, <em>Device and Network Abuse Policy</em>, and <em>Permissions Policy</em>.
-        </p>
-    </section>
-
-    <!-- Section 2: Personal Data Collection -->
-    <section class="policy-card">
-        <h2><span class="section-num">2</span> Personal Information Collection</h2>
-        <div class="callout callout-green">
-            <p><strong>Explicit Declaration:</strong> The developer does NOT directly collect, sell, lease, or transmit any Personally Identifiable Information (PII) from users of Custom Crosshair.</p>
-        </div>
-        <p>We do not require account registration, login credentials, or social media logins. Specifically, we <strong>never</strong> collect:</p>
-        <ul>
-            <li>Personal identifiers (names, postal addresses, phone numbers, email addresses).</li>
-            <li>Real-time geographic location (Precise GPS or approximate cell tower/Wi-Fi location).</li>
-            <li>Biometric, financial, microphone, camera, or contact list data.</li>
-            <li>Personal photos, media files, or internal device storage documents.</li>
-        </ul>
-    </section>
-
-    <!-- Section 3: Third-Party SDKs, Ads & Diagnostics -->
-    <section class="policy-card">
-        <h2><span class="section-num">3</span> Third-Party Services, Advertising & Diagnostics</h2>
-        <p>
-            To keep this utility free while funding ongoing maintenance, performance optimization, and bug fixing, the App integrates industry-standard third-party Software Development Kits (SDKs) provided by Google LLC. These services collect certain non-personally identifiable diagnostic and advertising data in accordance with their respective privacy policies.
-        </p>
-
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Provider / Service</th>
-                        <th>Purpose</th>
-                        <th>Data Handled</th>
-                        <th>Privacy Documentation</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Google Play Services</strong></td>
-                        <td>Core Android runtime & system APIs</td>
-                        <td>Anonymous device identifiers, system diagnostics</td>
-                        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Google AdMob</strong></td>
-                        <td>Displaying advertisements (Banner, Interstitial, Rewarded Video)</td>
-                        <td>Google Advertising ID (AAID), IP address (for general geolocation/language), device model, OS version, ad interaction metrics</td>
-                        <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Privacy & Data</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Google Firebase & Crashlytics</strong></td>
-                        <td>Crash reporting, stability monitoring & anonymous usage metrics</td>
-                        <td>Crash stack traces, device state at crash, app performance metrics, anonymous installation identifiers</td>
-                        <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <p>
-            These third-party providers use encrypted connections (HTTPS/TLS) to process data strictly for advertising delivery, fraud prevention, and application stability. We do not correlate or combine this automated technical telemetry with any real-world individual identities.
-        </p>
-    </section>
-
-    <!-- Section 4: Sensitive Android Permissions -->
-    <section class="policy-card">
-        <h2><span class="section-num">4</span> Android Permissions & Justifications</h2>
-        <p>
-            In compliance with the <strong>Google Play Permissions Policy</strong>, the following section discloses every sensitive and runtime Android permission requested by Custom Crosshair, detailing the strict, core user-facing functionality each permission enables.
-        </p>
-
-        <!-- SYSTEM_ALERT_WINDOW -->
-        <div class="perm-box">
-            <div class="perm-header">
-                <span class="perm-name">android.permission.SYSTEM_ALERT_WINDOW</span>
-                <span class="perm-tag">Display Over Other Apps</span>
-            </div>
-            <div class="perm-desc">
-                <strong>Why it is needed:</strong> This permission is the foundational core of Custom Crosshair. It permits the App's floating WindowManager view to render the crosshair graphic (HUD reticle) over full-screen gaming applications.
-            </div>
-            <div class="perm-guarantee">
-                🛡️ <strong>Safety Guarantee:</strong> This permission is solely used to project a transparent visual graphic. Custom Crosshair <strong>does NOT</strong> record your screen, does NOT capture keystrokes or touch inputs, does NOT access camera/microphone, and cannot inspect or intercept content from other running applications.
-            </div>
-        </div>
-
-        <!-- QUERY_ALL_PACKAGES -->
-        <div class="perm-box">
-            <div class="perm-header">
-                <span class="perm-name">android.permission.QUERY_ALL_PACKAGES</span>
-                <span class="perm-tag">Installed Apps Query</span>
-            </div>
-            <div class="perm-desc">
-                <strong>Why it is needed:</strong> Used exclusively for the user-facing <em>"Favorite Games" / Quick Launch</em> feature. This allows users to view their installed games inside the App, select favorites, and trigger direct launch shortcuts alongside their personalized crosshair setup.
-            </div>
-            <div class="perm-guarantee">
-                🛡️ <strong>Safety Guarantee:</strong> Installed application inspection occurs <strong>100% locally and offline</strong> on your device's memory. The inventory of installed games/packages is never transmitted to any external server, developer database, or third-party tracking entity.
-            </div>
-        </div>
-
-        <!-- FOREGROUND_SERVICE & NOTIFICATIONS -->
-        <div class="perm-box">
-            <div class="perm-header">
-                <span class="perm-name">android.permission.FOREGROUND_SERVICE</span>
-                <span class="perm-tag">Persistent Crosshair Service</span>
-            </div>
-            <div class="perm-desc">
-                <strong>Why it is needed:</strong> Ensures the crosshair overlay service remains active and is not prematurely killed by Android's background memory management / battery optimization while the user is actively playing high-demand 3D shooter games.
-            </div>
-        </div>
-
-        <div class="perm-box">
-            <div class="perm-header">
-                <span class="perm-name">android.permission.POST_NOTIFICATIONS</span>
-                <span class="perm-tag">Quick Controls Notification</span>
-            </div>
-            <div class="perm-desc">
-                <strong>Why it is needed:</strong> Required on Android 13+ (API level 33+) to display an ongoing system notification associated with the foreground crosshair service. This notification provides players with immediate, one-tap controls to toggle visibility, adjust position, or instantly terminate the overlay service without switching out of their game.
-            </div>
-            <div class="perm-guarantee">
-                🛡️ <strong>Safety Guarantee:</strong> Notifications are strictly operational controls. We do not send marketing, spam, or promotional push notifications.
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 5: Local Storage & Preferences -->
-    <section class="policy-card">
-        <h2><span class="section-num">5</span> Local Storage (Device Only)</h2>
-        <p>
-            Custom Crosshair uses standard Android <span class="mono">SharedPreferences</span> to save your configuration preferences directly on your device storage. This includes:
-        </p>
-        <ul>
-            <li>Crosshair geometry, scale, line thickness, rotation, and center dot settings.</li>
-            <li>Color codes (HEX/ARGB) and opacity/transparency values.</li>
-            <li>Selected crosshair style / reticle preset.</li>
-            <li>Selected favorite games for the quick launcher list.</li>
-        </ul>
-        <p>
-            All such configuration parameters remain stored offline in the App's sandboxed local data partition. If you uninstall the application or clear app data via Android Settings, these local preferences are permanently removed.
-        </p>
-    </section>
-
-    <!-- Section 6: Children's Privacy (COPPA) -->
-    <section class="policy-card">
-        <h2><span class="section-num">6</span> Children's Privacy (COPPA Compliance)</h2>
-        <p>
-            Custom Crosshair is a general utility designed for players of action and shooter games and is <strong>not targeted at children under the age of 13</strong> (or under 16 in certain European jurisdictions).
-        </p>
-        <p>
-            We do not knowingly collect, request, or solicit any personal information from children under 13 years of age. If you believe that a child has provided personal information to third-party SDKs through our App without parental consent, please contact us immediately, and we will take appropriate measures to coordinate with third-party providers for data deletion.
-        </p>
-    </section>
-
-    <!-- Section 7: User Choices & Opt-Out -->
-    <section class="policy-card">
-        <h2><span class="section-num">7</span> Your Data Rights & Ad Personalization Opt-Out</h2>
-        <p>
-            You retain complete control over your device identifiers and advertising settings. You can reset or delete your Android Advertising Identifier (AAID) and opt out of personalized ad targeting at any time through standard Android system settings:
-        </p>
-        <ol class="steps-list">
-            <li>Open your Android device's <strong>Settings</strong> app.</li>
-            <li>Scroll down and select <strong>Google</strong> (or <strong>Privacy & Security &gt; Ads</strong> on newer versions).</li>
-            <li>Tap on <strong>Ads</strong>.</li>
-            <li>Select <strong>Delete advertising ID</strong> or <strong>Reset advertising ID</strong>, or toggle <strong>Opt out of Ads Personalization</strong>.</li>
-        </ol>
-        <p>
-            Once opted out, you may still receive advertisements served by AdMob, but they will be contextual (based on general app category or approximate region) rather than tailored to your interests or cross-app browsing behavior.
-        </p>
-    </section>
-
-    <!-- Section 8: Security & Retention -->
-    <section class="policy-card">
-        <h2><span class="section-num">8</span> Data Security & Retention</h2>
-        <p>
-            Because we do not host user accounts or operate external proprietary databases for user profiles, we do not store your personal information on private servers. Third-party telemetry generated by Google Firebase Crashlytics and Google AdMob is transmitted using modern encryption protocols (HTTPS/TLS) and retained strictly in accordance with Google's data retention standards.
-        </p>
-    </section>
-
-    <!-- Section 9: Changes to Policy -->
-    <section class="policy-card">
-        <h2><span class="section-num">9</span> Changes to This Privacy Policy</h2>
-        <p>
-            We may occasionally update this Privacy Policy to reflect updates in application features, legal requirements, or Google Play policy amendments. Any changes will be posted immediately on this URL with an updated "Effective Date". We encourage users to periodically check this page for updates.
-        </p>
-    </section>
-
-    <!-- Section 10: Contact Information -->
-    <section class="policy-card">
-        <h2><span class="section-num">10</span> Contact Us & Project Repository</h2>
-        <p>
-            If you have any questions, suggestions, or concerns regarding this Privacy Policy, permissions disclosure, or data practices, please reach out to the developer:
-        </p>
-        
-        <div class="contact-box">
-            <p style="margin-bottom: 4px;">
-                <strong>Developer:</strong> HungTk<br>
-                <strong>Email Contact:</strong> <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">
+                This Privacy Policy explains how information is handled, sensitive permissions are used, and third-party advertising or diagnostic integrations operate in <strong>Custom Crosshair</strong>.
             </p>
-            <a class="btn-link" href="https://github.com/HungTk3110/Aim-Pro" target="_blank" rel="noopener">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                </svg>
-                View Project on GitHub (Aim-Pro)
-            </a>
+            <div class="meta-info">
+                <span><strong>Effective Date:</strong> October 27, 2026</span>
+                <span><strong>App Name:</strong> Custom Crosshair</span>
+                <span><strong>Package:</strong> <code>com.obito.armpro</code></span>
+                <span><strong>Developer:</strong> HungTk</span>
+                <span><strong>Contact:</strong> <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a></span>
+            </div>
+        </header>
+
+        <!-- Quick Highlights -->
+        <div class="highlight-grid">
+            <div class="highlight-card">
+                <div class="highlight-title">
+                    <span>🛡️</span> Zero Personal Tracking
+                </div>
+                <div class="highlight-desc">
+                    We never collect, store, or sell your name, email, phone number, GPS coordinates, contacts, or personal identity.
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-title">
+                    <span>🎯</span> HUD Overlay Purpose
+                </div>
+                <div class="highlight-desc">
+                    The screen overlay permission is strictly used to render a visual aiming crosshair on top of your shooter games.
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-title">
+                    <span>⚡</span> Offline App Filtering
+                </div>
+                <div class="highlight-desc">
+                    Installed game queries for the "Favorite Games" launcher are performed strictly offline on your local device.
+                </div>
+            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 HungTk. All rights reserved. | Built for Custom Crosshair (<span class="mono">com.obito.armpro</span>)</p>
-    </footer>
+        <!-- Table of Contents -->
+        <nav class="toc-box" aria-label="Table of Contents">
+            <h2>Table of Contents</h2>
+            <ul class="toc-list">
+                <li><a href="#overview">1. Overview &amp; Commitment</a></li>
+                <li><a href="#personal-information">2. Personal Information Collection</a></li>
+                <li><a href="#third-party-services">3. Third-Party Services &amp; Advertising</a></li>
+                <li><a href="#android-permissions">4. Android Permissions &amp; Justifications</a></li>
+                <li><a href="#local-storage">5. Local Storage (Device Only)</a></li>
+                <li><a href="#data-retention-security">6. Data Retention &amp; Security</a></li>
+                <li><a href="#childrens-privacy">7. Children's Privacy</a></li>
+                <li><a href="#your-privacy-rights">8. Your Privacy Rights &amp; Opt-Out</a></li>
+                <li><a href="#international-transfers">9. International Transfers</a></li>
+                <li><a href="#changes-to-policy">10. Changes to This Policy</a></li>
+                <li><a href="#contact-us">11. Contact Us &amp; Repository</a></li>
+            </ul>
+        </nav>
 
-</div>
+        <!-- Main Content -->
+        <main>
+            <!-- Section 1 -->
+            <section id="overview">
+                <h2>1. Overview &amp; Commitment</h2>
+                <p>
+                    <strong>Custom Crosshair</strong> (Package: <code>com.obito.armpro</code>) is a specialized gaming utility app designed to assist players by generating an adjustable, custom-designed aiming reticle (crosshair HUD overlay) on screen during gameplay for first-person shooter (FPS) and third-person shooter (TPS) games.
+                </p>
+                <p>
+                    We respect your privacy and are committed to full transparency regarding our data practices. We operate in strict compliance with the <strong>Google Play Developer Program Policies</strong>, specifically including the <em>User Data Policy</em>, <em>Device and Network Abuse Policy</em>, and <em>Permissions Policy</em>.
+                </p>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="personal-information">
+                <h2>2. Personal Information Collection</h2>
+                <div class="notice-card notice-card-green">
+                    <p><strong>Explicit Declaration:</strong> The developer does NOT directly collect, sell, lease, or transmit any Personally Identifiable Information (PII) from users of Custom Crosshair.</p>
+                </div>
+                <p>We do not require account registration, login credentials, or social media logins. Specifically, we <strong>never</strong> collect:</p>
+                <ul>
+                    <li>Personal identifiers (names, postal addresses, phone numbers, email addresses).</li>
+                    <li>Real-time geographic location (Precise GPS or approximate cell tower/Wi-Fi location).</li>
+                    <li>Biometric, financial, microphone, camera, or contact list data.</li>
+                    <li>Personal photos, media files, or internal device storage documents.</li>
+                </ul>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="third-party-services">
+                <h2>3. Third-Party Services, Advertising &amp; Diagnostics</h2>
+                <p>
+                    To keep this utility free while funding ongoing maintenance, performance optimization, and bug fixing, the App integrates industry-standard third-party Software Development Kits (SDKs) provided by Google LLC. These services collect certain non-personally identifiable diagnostic and advertising data in accordance with their respective privacy policies.
+                </p>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Provider / Service</th>
+                                <th>Purpose</th>
+                                <th>Data Handled</th>
+                                <th>Privacy Documentation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Google Play Services</strong></td>
+                                <td>Core Android runtime &amp; system APIs</td>
+                                <td>Anonymous device identifiers, system diagnostics</td>
+                                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google AdMob</strong></td>
+                                <td>Displaying advertisements (Banner, Interstitial, Rewarded Video)</td>
+                                <td>Google Advertising ID (AAID), IP address (for general geolocation/language), device model, OS version, ad interaction metrics</td>
+                                <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob Privacy &amp; Data</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Firebase &amp; Crashlytics</strong></td>
+                                <td>Crash reporting, stability monitoring &amp; anonymous usage metrics</td>
+                                <td>Crash stack traces, device state at crash, app performance metrics, anonymous installation identifiers</td>
+                                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    These third-party providers use encrypted connections (HTTPS/TLS) to process data strictly for advertising delivery, fraud prevention, and application stability. We do not correlate or combine this automated technical telemetry with any real-world individual identities.
+                </p>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="android-permissions">
+                <h2>4. Android Permissions &amp; Justifications</h2>
+                <p>
+                    In compliance with the <strong>Google Play Permissions Policy</strong>, the following section discloses every sensitive and runtime Android permission requested by Custom Crosshair, detailing the strict, core user-facing functionality each permission enables.
+                </p>
+
+                <!-- SYSTEM_ALERT_WINDOW -->
+                <div class="perm-box">
+                    <div class="perm-header">
+                        <span class="perm-name">android.permission.SYSTEM_ALERT_WINDOW</span>
+                        <span class="perm-tag">Display Over Other Apps</span>
+                    </div>
+                    <div class="perm-desc">
+                        <strong>Why it is needed:</strong> This permission is the foundational core of Custom Crosshair. It permits the App's floating WindowManager view to render the crosshair graphic (HUD reticle) over full-screen gaming applications.
+                    </div>
+                    <div class="perm-guarantee">
+                        🛡️ <strong>Safety Guarantee:</strong> This permission is solely used to project a transparent visual graphic. Custom Crosshair <strong>does NOT</strong> record your screen, does NOT capture keystrokes or touch inputs, does NOT access camera/microphone, and cannot inspect or intercept content from other running applications.
+                    </div>
+                </div>
+
+                <!-- QUERY_ALL_PACKAGES -->
+                <div class="perm-box">
+                    <div class="perm-header">
+                        <span class="perm-name">android.permission.QUERY_ALL_PACKAGES</span>
+                        <span class="perm-tag">Installed Apps Query</span>
+                    </div>
+                    <div class="perm-desc">
+                        <strong>Why it is needed:</strong> Used exclusively for the user-facing <em>"Favorite Games" / Quick Launch</em> feature. This allows users to view their installed games inside the App, select favorites, and trigger direct launch shortcuts alongside their personalized crosshair setup.
+                    </div>
+                    <div class="perm-guarantee">
+                        🛡️ <strong>Safety Guarantee:</strong> Installed application inspection occurs <strong>100% locally and offline</strong> on your device's memory. The inventory of installed games/packages is never transmitted to any external server, developer database, or third-party tracking entity.
+                    </div>
+                </div>
+
+                <!-- FOREGROUND_SERVICE -->
+                <div class="perm-box">
+                    <div class="perm-header">
+                        <span class="perm-name">android.permission.FOREGROUND_SERVICE</span>
+                        <span class="perm-tag">Persistent Crosshair Service</span>
+                    </div>
+                    <div class="perm-desc">
+                        <strong>Why it is needed:</strong> Ensures the crosshair overlay service remains active and is not prematurely killed by Android's background memory management or battery optimization while the user is actively playing high-demand 3D shooter games.
+                    </div>
+                </div>
+
+                <!-- POST_NOTIFICATIONS -->
+                <div class="perm-box">
+                    <div class="perm-header">
+                        <span class="perm-name">android.permission.POST_NOTIFICATIONS</span>
+                        <span class="perm-tag">Quick Controls Notification</span>
+                    </div>
+                    <div class="perm-desc">
+                        <strong>Why it is needed:</strong> Required on Android 13+ (API level 33+) to display an ongoing system notification associated with the foreground crosshair service. This notification provides players with immediate, one-tap controls to toggle visibility, adjust position, or instantly terminate the overlay service without switching out of their game.
+                    </div>
+                    <div class="perm-guarantee">
+                        🛡️ <strong>Safety Guarantee:</strong> Notifications are strictly operational controls. We do not send marketing, spam, or promotional push notifications.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5 -->
+            <section id="local-storage">
+                <h2>5. Local Storage (Device Only)</h2>
+                <p>
+                    Custom Crosshair uses standard Android <code>SharedPreferences</code> to save your configuration preferences directly on your device storage. This includes:
+                </p>
+                <ul>
+                    <li>Crosshair geometry, scale, line thickness, rotation, and center dot settings.</li>
+                    <li>Color codes (HEX/ARGB) and opacity/transparency values.</li>
+                    <li>Selected crosshair style / reticle preset.</li>
+                    <li>Selected favorite games for the quick launcher list.</li>
+                </ul>
+                <p>
+                    All such configuration parameters remain stored offline in the App's sandboxed local data partition. If you uninstall the application or clear app data via Android Settings, these local preferences are permanently removed.
+                </p>
+            </section>
+
+            <!-- Section 6 -->
+            <section id="data-retention-security">
+                <h2>6. Data Retention &amp; Security</h2>
+                <h3>Data Retention</h3>
+                <p>
+                    The developer does not operate external databases storing personal player profiles. Preferences are saved locally on your device storage. If you uninstall the app or clear app data via your device settings, local preferences are permanently removed.
+                </p>
+                <p>
+                    Data collected by third-party SDKs (such as AdMob or Google Play Services) is retained according to their published retention schedules and data policies, typically ranging from a few weeks for diagnostic telemetry up to statutory limits for aggregated performance reporting.
+                </p>
+
+                <h3>Data Security</h3>
+                <p>
+                    We take reasonable organizational and technical precautions to safeguard the information we handle. Network transmissions by third-party SDKs are protected using standard encryption protocols (HTTPS / Transport Layer Security - TLS). However, please note that no method of transmission over the internet or electronic storage is 100% secure, and absolute security cannot be guaranteed.
+                </p>
+            </section>
+
+            <!-- Section 7 -->
+            <section id="childrens-privacy">
+                <h2>7. Children's Privacy (COPPA Compliance)</h2>
+                <p>
+                    Custom Crosshair is a general utility designed for players of action and shooter games and is <strong>not targeted at children under the age of 13</strong> (or under 16 in certain European jurisdictions).
+                </p>
+                <p>
+                    We do not knowingly collect, request, or solicit any personal information from children under 13 years of age. If you believe that a child has provided personal information to third-party SDKs through our App without parental consent, please contact us immediately, and we will take appropriate measures to coordinate with third-party providers for data deletion.
+                </p>
+            </section>
+
+            <!-- Section 8 -->
+            <section id="your-privacy-rights">
+                <h2>8. Your Privacy Rights &amp; Opt-Out</h2>
+                <p>
+                    Depending on your country or state of residence, you may have specific privacy rights under laws such as the General Data Protection Regulation (GDPR / UK GDPR) or the California Consumer Privacy Act / California Privacy Rights Act (CCPA / CPRA).
+                </p>
+                <p>These rights include:</p>
+                <ul>
+                    <li><strong>Right to Access &amp; Know:</strong> You may request information on what categories of technical data are processed.</li>
+                    <li><strong>Right to Deletion:</strong> You can request the deletion of personal information held by us (subject to legal exceptions).</li>
+                    <li><strong>Right to Opt Out of Targeted Advertising:</strong> You can reset or delete your Android Advertising Identifier (AAID) and opt out of personalized ad targeting at any time through standard Android system settings:</li>
+                </ul>
+                <ol class="steps-list">
+                    <li>Open your Android device's <strong>Settings</strong> app.</li>
+                    <li>Scroll down and select <strong>Google</strong> (or <strong>Privacy &amp; Security &gt; Ads</strong> on newer versions).</li>
+                    <li>Tap on <strong>Ads</strong>.</li>
+                    <li>Select <strong>Delete advertising ID</strong> or <strong>Reset advertising ID</strong>, or toggle <strong>Opt out of Ads Personalization</strong>.</li>
+                </ol>
+                <p>
+                    Once opted out, you may still receive advertisements served by AdMob, but they will be contextual (based on general app category or approximate region) rather than tailored to your interests or cross-app browsing behavior.
+                </p>
+            </section>
+
+            <!-- Section 9 -->
+            <section id="international-transfers">
+                <h2>9. International Data Transfers</h2>
+                <p>
+                    Third-party service providers utilized by the App (including Google LLC) operate cloud infrastructure and servers located across the globe, including in the United States and other countries outside of your residence.
+                </p>
+                <p>
+                    When data is transferred across international borders, these service providers utilize legally approved data transfer mechanisms, such as Standard Contractual Clauses (SCCs) and adherence to recognized data privacy frameworks, ensuring an adequate level of data protection in compliance with international standards.
+                </p>
+            </section>
+
+            <!-- Section 10 -->
+            <section id="changes-to-policy">
+                <h2>10. Changes to This Privacy Policy</h2>
+                <p>
+                    We may occasionally update this Privacy Policy to reflect updates in application features, legal requirements, or Google Play policy amendments. Any changes will be posted immediately on this URL with an updated "Effective Date". We encourage users to periodically check this page for updates.
+                </p>
+            </section>
+
+            <!-- Section 11 -->
+            <section id="contact-us">
+                <h2>11. Contact Us &amp; Project Repository</h2>
+                <p>
+                    If you have any questions, suggestions, or concerns regarding this Privacy Policy, permissions disclosure, or data practices, please reach out to the developer:
+                </p>
+                
+                <div class="notice-card">
+                    <p><strong>App:</strong> Custom Crosshair (<code>com.obito.armpro</code>)</p>
+                    <p><strong>Platform:</strong> Android (Google Play)</p>
+                    <p><strong>Developer:</strong> HungTk</p>
+                    <p><strong>Contact Email:</strong> <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a></p>
+                </div>
+
+                <div class="contact-box">
+                    <a class="btn-link" href="https://github.com/HungTk3110/Aim-Pro" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                        </svg>
+                        View Project on GitHub (Aim-Pro)
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>Custom Crosshair</strong> &bull; Android Gaming Utility (<code>com.obito.armpro</code>)</p>
+            <p>Contact: <a href="mailto:hungtk.forwork@gmail.com">hungtk.forwork@gmail.com</a></p>
+            <p>Effective Date: October 27, 2026 &bull; Published via GitHub Pages</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
