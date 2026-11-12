@@ -13,13 +13,11 @@ The page is written in professional English and designed for seamless rendering 
 - **Category:** Tools & Utilities / Phone Cleaner & Storage Optimizer
 - **Platform:** Android
 - **Developer / Publisher:** HungTk / Obito Team
-- **Primary Contact Email:** `hungtk.forwork@gmail.com`
-- **Alternative Contact:** `trinhkhachung31102001@gmail.com`
+- **Contact Email:** `hungtk.forwork@gmail.com`
 - **Hosting Platform:** GitHub Pages
 - **File Name:** `smartclean-privacy-policy.html`
 - **Root Repository:** `https://github.com/HungTk3110/hungtk3110.github.io`
 - **Public Policy URL:** [https://hungtk3110.github.io/smartclean-privacy-policy.html](https://hungtk3110.github.io/smartclean-privacy-policy.html)
-- **App Repository:** [https://github.com/HungTk3110/Smart-Clean](https://github.com/HungTk3110/Smart-Clean)
 - **Effective Date:** November 12, 2026
 
 ---
@@ -55,7 +53,7 @@ The page is written in professional English and designed for seamless rendering 
 9. **Your Privacy Rights & Opt-Out:** GDPR / CCPA rights and 4-step Android Advertising ID reset guide.
 10. **International Transfers:** Cloud infrastructure disclosures and Standard Contractual Clauses (SCCs).
 11. **Changes to This Policy:** Update tracking procedures and effective date.
-12. **Contact Us & Project Repository:** Direct contact email and link to GitHub repository.
+12. **Contact Us:** Direct developer contact email.
 
 ---
 
@@ -65,3 +63,4 @@ When filling out the Google Play Data Safety form in Play Console for `com.obito
 - **Is all of the user data collected by your app encrypted in transit?** -> **Yes** (All SDK transmissions use HTTPS/TLS).
 - **Do you provide a way for users to request that their data be deleted?** -> **Yes** (Users can reset AAID in Android Settings or uninstall app to purge local SharedPreferences).
 - **Photos and Videos / Files and Docs:** -> Select **No** (all file access is handled exclusively on-device for local cache/junk cleanup and is never collected or shared).
+
